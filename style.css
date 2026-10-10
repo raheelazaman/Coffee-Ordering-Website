@@ -1,11 +1,12 @@
 :root {
-  --ink: #222222;
-  --muted: #5c5c5c;
-  --line: #e2e2e2;
-  --bg-alt: #f7f5f2;
+  --ink: #d4d3db;
+  --muted: #d3e90a;
+  --line: #302b2b;
+  --bg-alt: #e6aa51;
   --accent: #b9552b;
   --dark: #222222;
-  --paper: #ffffff;
+  --paper: #281d1d;
+  --cta: #578782;
   --heading-font: 'Arimo', Arial, sans-serif;
   --body-font: 'Lato', Arial, sans-serif;
 }
@@ -17,7 +18,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--body-font);
   color: var(--ink);
-  background: var(--paper);
+  background: var(--cta);
   line-height: 1.6;
   font-size: 16px;
 }
