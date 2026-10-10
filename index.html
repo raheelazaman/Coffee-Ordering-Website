@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fernwood Coffee Roasters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a href="#top" class="logo">Fernwood</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <a href="#visit" class="btn btn-primary nav-cta">Order ahead</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <h1>Coffee roasted in small batches.</h1>
+      <p>Fernwood is a neighborhood roastery on the edge of the woods — single-origin beans, slow pour-overs, and a bench worth staying on.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">See the menu</a>
+        <a href="#visit" class="btn btn-ghost">Find us</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="block" id="story">
+    <div class="wrap">
+      <p class="kicker">Since 2016</p>
+      <h2>Started in a garage, still stubborn about it</h2>
+      <p>We began roasting on a two-kilo drum behind a hardware store, selling bags out of a folding table on Saturdays. A decade later the drum is bigger, but the approach hasn't changed: small lots, transparent sourcing, and roasting to taste rather than a schedule.</p>
+      <p>Every bean is cupped before it's approved, and every batch is logged so we can taste our way back to it.</p>
+    </div>
+  </section>
+
+  <section class="block alt" id="menu">
+    <div class="wrap">
+      <p class="kicker">On the counter</p>
+      <h2>A short menu, made properly</h2>
+
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="tab-btn active" data-category="drinks" role="tab" aria-selected="true">Drinks</button>
+        <button class="tab-btn" data-category="food" role="tab" aria-selected="false">Food &amp; Beans</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <div class="menu-card" data-category="drinks">
+          <span class="price">Rs.450</span>
+          <h3>House Espresso</h3>
+          <p>Our year-round blend — cocoa and dried cherry, balanced for milk or straight.</p>
+        </div>
+        <div class="menu-card" data-category="drinks">
+          <span class="price">Rs.500</span>
+          <h3>Pour Over</h3>
+          <p>A single origin chosen weekly, brewed to order and served with tasting notes.</p>
+        </div>
+        <div class="menu-card" data-category="drinks">
+          <span class="price">Rs.550</span>
+          <h3>Fernwood Latte</h3>
+          <p>House espresso, steamed whole milk, a touch of maple syrup.</p>
+        </div>
+        <div class="menu-card" data-category="drinks">
+          <span class="price">Rs.400</span>
+          <h3>Cold Brew</h3>
+          <p>Steeped eighteen hours, served over ice with a wide, low-acid cup.</p>
+        </div>
+        <div class="menu-card" data-category="food">
+          <span class="price">Rs.350</span>
+          <h3>Morning Bun</h3>
+          <p>Baked next door each morning — laminated dough, brown sugar, orange zest.</p>
+        </div>
+        <div class="menu-card" data-category="food">
+          <span class="price">Rs.300</span>
+          <h3>Bag of Beans</h3>
+          <p>340g of whatever's roasting this week, ground to order or left whole.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="visit">
+    <div class="wrap">
+      <p class="kicker">Come sit a while</p>
+      <h2>Find us at the treeline</h2>
+      <div class="visit-details">
+        <div class="visit-row"><span>Address</span><span>I8 Markaz, ISLAMABAD</span></div>
+        <div class="visit-row"><span>Hours</span><span>Mon–Sat, 7am–4pm</span></div>
+        <div class="visit-row"><span>Phone</span><span>(555) 019-2244</span></div>
+      </div>
+      <form class="signup-form" id="signup-form">
+        <label for="email-input">Get roast-day notices</label>
+        <div class="signup-row">
+          <input type="email" id="email-input" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-primary">Sign up</button>
+        </div>
+        <p class="form-msg" id="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span class="logo">Fernwood</span>
+      <p>© <span id="year"></span> Fernwood Coffee Roasters — 118 Fernwood Lane</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
